@@ -1,14 +1,26 @@
-# Storing Values
-tree1 = 98
-tree2 = 94
-tree3 = 41
-tree4 = 95
-tree5 = 11
+L = [4, 5, 1, 2, 9, 7, 6, 8]
+print("Original list :", L)
 
-# Finging the total of tree
-sum = tree1+tree2+tree3+tree4+tree5
-print("the sum of all the 5 tree is: ", sum)
+# variable to store the sum of
+# the list
+count = 0
 
-#Finding the average
-average = sum/5
-print("the average of the all the tree is :", average)
+# Finding the sum
+for i in L:
+    count += i
+
+# divide the total elements by
+# number of elements
+avg = count / len(L)
+
+print("sum =", count)
+print("average =", avg)
+
+# Sorting the elements of the list
+L.sort()
+
+# printing the first element
+print("Smallest element is", L[0])
+
+# printing the last element
+print("Largest element is", L[-1])
